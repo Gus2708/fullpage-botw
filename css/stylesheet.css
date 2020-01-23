@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body { 
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.texto-naranja {
+    font-weight: 300;
+    color: #E67E22;
+}
+
+.texto-blanco {
+    font-weight: 700;
+    color: #fff;
+}
+
+.texto-negro {
+	color: #000;
+}
+
+/*clases de fullpage.js*/
+#fp-nav ul li a span{
+    background: #797D7F  ;
+}
+
+#fp-nav ul li .fp-tooltip{
+    color: #95A5A6 ;
+}
+
+/*menu de navegacion*/
+.nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+
+}
+
+.nav li, .nav a{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #424949  ;
+    transition: .5s linear;
+
+}
+
+.nav li.active{
+    border-bottom: 2px solid #E67E22;
+}
+
+.menu li a{
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li.active a,
+.menu li:hover a{
+    color: #FBFCFC;
+}
+/*header*/
+
+.nav .name{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav .name p{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    color: #FBFCFC;
+}
+
+.nav .name i{
+    display: flex;
+    color: #E67E22;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+
+}
+
+.header{
+    background: url(../media/wp2506098.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.header .contenedor-titulo{
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+
+.header .titulo{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.header .contenedor-icono{
+    position: absolute;
+    z-index: 99;
+    font-size: 20px;
+    bottom: 3%;
+    left: 50%;
+    animation: bajar-subir 1s ease infinite;
+}
+
+.titulo{
+    font-family: 'Alata', sans-serif;
+}
+
+/*animacion*/
+
+@keyframes bajar-subir{
+    0%{transform: translateY(20px);}
+    25%{transform: translateY(0);}
+    100%{transform: translateY(20px);}
+}
+/*informacion*/
+
+.productos article{
+    background-position: center;
+    background-size: cover;    
+}
+
+.productos article:nth-child(1){
+    background-image: url('../media/1057851.jpg');
+       background-position: center;
+    background-size: cover;    
+}
+
+.productos article:nth-child(2){
+    background-image: url('../media/the_legend_of_zelda_breath_of_the_wild-7-1024x576.jpg');
+    background-position: center;
+    background-size: cover;    
+}
+
+.productos article:nth-child(3){
+    background-image: url('../media/botw06.jpg');
+    background-position: center;
+    background-size: cover;    
+}
+
+.productos .informacion{
+    margin: 0 30px;
+    max-width: 60%;
+}
+
+.productos .informacion::before{
+    content: "";
+    height: 50px;
+    width: 2px;
+    display: inline-block;
+    background: #E67E22;
+    position: absolute;
+    top: 55%;
+    margin: -10px;
+}
+
+.productos .nombre{
+    max-width: 100%;
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: 'Alata', sans-serif;
+}
+
+.productos .descripcion{
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*clase  de fullpage.js*/
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev{
+    top: 95%;
+}
+
+.fp-controlArrow.fp-prev{
+    left: 85%;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent #4D5656 transparent transparent;
+}
+
+.fp-controlArrow.fp-next{
+    left: 95%;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent #4D5656;
+}
+
+/*FOOTER*/
+.footer {
+    background: url('../media/Zelda-Breath-of-the-Wild-screenshots24.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .texto-naranja{
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+.footer h2{
+    opacity: 0;
+    font-family: 'Alata', sans-serif;
+    transition: 1s ease all;
+}
+
+.footer .redes-sociales{
+    display: flex;
+    margin: 0;
+    font-size: 40px;
+    justify-content:  center;
+}
+
+.footer .redes-sociales a{
+    display: flex;
+    background: rgba(0, 0, 0, 0.63);
+    width: 80px;
+    height: 80px;
+    color: #797D7F;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 20px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.footer .redes-sociales a:hover{
+    width: 85px;
+    height: 85px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.footer .facebook i{color: #3b5998;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;}
+.footer .github i{color: #ffffff;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;}
+.footer .instagram i{color: #cf2873 ;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;}
+
+.footer .facebook:hover{
+    background: #3b5998;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;}
+.footer .github:hover{
+    background: #ffffff;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;}
+.footer .instagram:hover{
+    background: #cf2873 ;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;}
+
+.footer .facebook:hover i{
+    color: #797D7F;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;}
+
+
+
+.footer .github:hover i{
+    color: #797D7F;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;}
+
+
+.footer .instagram:hover i{
+    color: #797D7F;
+        -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;}
+
+    /*mediaquery*/
+
+@media screen and (max-width: 768px){
+    .menu li a,
+    .menu li.active a{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        font-size: 18px;
+    }
+     .nombre{
+         font-size: 28px;
+     }
+
+     .descripcion{
+         font-size: 16px;
+     }
+
+     .footer h2{
+         font-size: 15px;
+     }
+
+     .footer .redes-sociales{
+         font-size: 30px;
+     }
+    
+     .footer .redes-sociales a{
+         width: 70px;
+         height: 70px;
+     }
+
+     .footer .texto-naranja{
+         font-style: 40px;
+     }
+}
+
+@media screen and (max-width: 576px){
+    .header .titulo{
+        font-size: 60px;
+    }
+      .productos .informacion{
+         font-size: 16px;
+         max-width: 100%;
+     }
+
+}
+
+@media screen and (max-width: 450px){
+    .nav{
+        display: block;
+        text-align: center;
+    }
+
+    .nav a {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .nav .name{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+     .header .titulo{
+         font-size: 30px;
+
+    }
+
+    .footer .texto-naranja{
+        font-size: 24px;
+    }
+}
+
